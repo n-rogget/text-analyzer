@@ -754,4 +754,5 @@ en los archivos [test/analyzer.spec.js](test/analyzer.spec.js) y
 También tendrás que ajustar las pruebas ya existentes de las
 funcionalidades requeridas.
 #   t e x t - a n a l y z e r  
+ #   t e x t - a n a l y z e r  
  
