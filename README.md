@@ -755,4 +755,6 @@ También tendrás que ajustar las pruebas ya existentes de las
 funcionalidades requeridas.
 #   t e x t - a n a l y z e r  
  #   t e x t - a n a l y z e r  
+ #   t e x t . a n a l i z e r  
+ #   t e x t . a n a l i z e r  
  
