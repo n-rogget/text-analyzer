@@ -62,5 +62,6 @@ resultado en tiempo real a medida que el usuario escribe su texto:
 
 3. La aplicación permite limpiar el contenido de la caja de texto haciendo
 clic en el boton "Limpiar texto"
-![Boton ] (https://github.com/n-rogget/text-analyzer/blob/main/docs/docs/images/Boton%20(2).png?raw=true "el boton")
+![Boton ] (![Alt text](image.png) "el boton")
+![aglo sd] (https://raw.githubusercontent.com/n-rogget/text-analyzer/558245cfb97db3b70bfb013aee9eb8b0cc0e2c21/docs/docs/images/Boton%20(2).png)
 
