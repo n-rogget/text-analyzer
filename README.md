@@ -44,6 +44,9 @@ resultado en tiempo real a medida que el usuario escribe su texto:
     - **Caracteres**: la aplicación debe puede contar el número de
     caracteres en el texto de entrada, incluidos espacios y signos de
     puntuación, y muestra este recuento al usuario.
+    ![Text imagen] ( https://raw.githubusercontent.com/n-rogget/text-analyzer/558245cfb97db3b70bfb013aee9eb8b0cc0e2c21/docs/docs/images/Caracteres.png)
+   ![Text imagensd]  (https://github.com/n-rogget/text-analyzer/blob/558245cfb97db3b70bfb013aee9eb8b0cc0e2c21/docs/docs/images/Caracteres.png)
+
     ![Caracteres](https://vscode.dev/github/n-rogget/text-analyzer/blob/main/docs/docs/images/Caracteres.png)
     - **Caracteres sin espacio**: la aplicación puede contar el número
      de caracteres en el texto de entrada, excluyendo espacios y 
@@ -54,7 +57,7 @@ resultado en tiempo real a medida que el usuario escribe su texto:
     ![Numeros] (https://vscode.dev/github/n-rogget/text-analyzer/blob/main/docs/docs/images/numeros.png)
     - **Suma de números**: la aplicación suma todos los números que
     hay en el texto de entrada y muestra el resultado al usuario.
-    ![Suma] (https://vscode.dev/github/n-rogget/text-analyzer/blob/main/docs/docs/images/suma.png)
+    
     - **Promedio longitud de palabras**: la aplicación calcula la
     longitud media de las palabras en el texto de entrada y las muestra 
     al usuario.
@@ -62,6 +65,5 @@ resultado en tiempo real a medida que el usuario escribe su texto:
 
 3. La aplicación permite limpiar el contenido de la caja de texto haciendo
 clic en el boton "Limpiar texto"
-![Boton ] (![Alt text](image.png) "el boton")
-![aglo sd] (https://raw.githubusercontent.com/n-rogget/text-analyzer/558245cfb97db3b70bfb013aee9eb8b0cc0e2c21/docs/docs/images/Boton%20(2).png)
+ ![Alt text](image.png) 
 
