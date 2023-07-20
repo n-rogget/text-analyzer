@@ -54,5 +54,5 @@ resultado en tiempo real a medida que el usuario escribe su texto:
 
 3. La aplicación permite limpiar el contenido de la caja de texto haciendo
 clic en el boton "Limpiar texto"
-![texto cualquiera por si no carga la imagen]("C:\Users\nicol\Pictures\Screenshots\Captura de pantalla 2023-07-20 182954.png")
+
 
