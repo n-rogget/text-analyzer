@@ -27,7 +27,7 @@ cuadroTexto.addEventListener("keyup", () => {
   
   const suma = document.querySelector ("[ data-testid= 'number-sum']")
   const contadorSuma = analyzer.getNumberSum (texto);
-  suma.innerHTML = "Suma de numeros: " + contadorSuma
+  suma.innerHTML = "Suma de números: " + contadorSuma
 
 })
 const boton = document.getElementById('reset-button')
