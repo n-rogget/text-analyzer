@@ -1,21 +1,62 @@
-const analyzer = {  
+const analyzer = {
   getWordCount: (text) => {
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    const sinPal = 0
+    if (text.length === 0){
+      return sinPal
+    }
+    const palabras = text.trim().split(" ")
+    return palabras.length;
   },
+
   getCharacterCount: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
+    return text.length;
   },
+
   getCharacterCountExcludingSpaces: (text) => {
-    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    const sinEsp = text.replace(/[!"#$%&'()*+,-./:;<=>?@[\]^_'{|}~\s]/g, "")
+
+    return sinEsp.length;  // la s elimina espacios
+    
   },
-  getAverageWordLength: (text) => {    
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+  getAverageWordLength: (text) => {
+    const palabras = text.trim().split(" ");
+    const promedio = text.replace(/\s/g, "").length/palabras.length;
+    const total = promedio.toFixed(2);
+    return parseFloat (total)
   },
+
   getNumberCount: (text) => {
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    const num = /\D+/g; 
+    const numero = text.match(num)
+    if (numero !== isNaN ) {
+      return numero.length
+    }
+    else { 
+      return 0
+    }
+  
+
+    /*const num = text.replace(/[^0-9]+/g, ""); //busca digitos del 0al9  /g busca en toda la cadena 
+    const numero = num.trim().split(" ")
+    const total = numero.length
+    return  parseFloat (total)*/   //split (para dividir) trim,    // "hola   como estas" -> {"hola","  como","estas"}
+  
+    // {"567", "hola"} Number () -> {567,NaN}
+    // filter. !NaN
+
+    
   },
+
   getNumberSum: (text) => {
-    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    let suma = 0;
+    const numero = text.trim().split(" ");
+    for (let i=0; i<numero.length; i++){
+      const char = numero[i]
+      if (!isNaN(char) && char !== "")
+        suma = suma + (char*1);
+    }
+    return suma 
+
   },
 };
 

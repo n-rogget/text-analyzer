@@ -1,0 +1,86 @@
+
+header{
+  background-color:#048DB3;
+  color:#E0F3FF;
+  font-family: "Courier New", monospace;
+  font-size: 25px;
+}
+footer{
+  text-align: right;
+  clear:both;
+  margin-right: 70px;
+  margin-top: 120px;
+}
+.caja { 
+  margin-right: 50px;
+  font-family: sans-serif; 
+  font-size: 18px; 
+  font-weight: 10px; 
+  border-width: 1px;
+  border-radius: 8px;
+  align-self: right;
+  width:300px;
+  height:40px;
+  line-height: 1.6;
+  max-height: none;
+  max-width: none;
+  padding: 5px;
+  float: right;
+  box-sizing: content-box;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+textarea {
+  margin-left: 50px;
+  width:600px;
+  height:300px;
+  border: solid;
+  align-self: left;
+  font-size: 18px; 
+  float: left;
+  resize: none;
+  overflow: auto;
+}
+
+#reset-button {
+  margin-top: 25px;
+  margin-left: 250px;
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+  text-align: center;
+  background-color:#E0F3FF;
+  border-radius: 6px;
+  color: #171411;
+  padding: 12px 30px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-self: left;
+
+}
+body {
+  background-color:#048DB3;
+  color:#E0F3FF;
+  font-family: "Courier New", monospace;
+  font-size: 25px;
+}
+h1 {
+  text-align: center;
+}
+textarea{
+  font-family: "Courier New", monospace;
+  color:#048DB3;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns:auto auto ;
+  gap: 10px;
+  grid-template-rows: 200px 80px;
+}
+
+.grid-container > div {
+  text-align: center;
+
+}
