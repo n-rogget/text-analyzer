@@ -30,8 +30,9 @@ cuadroTexto.addEventListener("keyup", () => {
   suma.innerHTML = "Suma de numeros: " + contadorSuma
 
 })
-const boton = document.getElementById ('reset-button')
-const textarea = document.querySelector ('user-input')
+const boton = document.getElementById('reset-button')
+const textarea = document.querySelector ('textarea[name="user-input"]')
+// const textarea = document.querySelector ('textarea')
 
 function reiniciar() {
   textarea.value = "";  //me rechaza value

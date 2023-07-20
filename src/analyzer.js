@@ -26,25 +26,15 @@ const analyzer = {
   },
 
   getNumberCount: (text) => {
-    const num = /\D+/g; 
-    const numero = text.match(num)
-    if (numero !== isNaN ) {
-      return numero.length
+    const textSplit = text.split(' ')
+    let suma = 0
+    for(let i= 0; i < textSplit.length; i++ ){
+      
+      if(Number(textSplit[i])){
+        suma = suma + 1
+      }
     }
-    else { 
-      return 0
-    }
-  
-
-    /*const num = text.replace(/[^0-9]+/g, ""); //busca digitos del 0al9  /g busca en toda la cadena 
-    const numero = num.trim().split(" ")
-    const total = numero.length
-    return  parseFloat (total)*/   //split (para dividir) trim,    // "hola   como estas" -> {"hola","  como","estas"}
-  
-    // {"567", "hola"} Number () -> {567,NaN}
-    // filter. !NaN
-
-    
+    return suma 
   },
 
   getNumberSum: (text) => {
