@@ -4,7 +4,7 @@ const analyzer = {
     if (text.length === 0){
       return sinPal
     }
-    const palabras = text.split(" ")
+    const palabras = text.trim().split(" ")
     return palabras.length;
   },
 
@@ -13,31 +13,40 @@ const analyzer = {
   },
 
   getCharacterCountExcludingSpaces: (text) => {
-    return text.replace(/\s/g, "").length;  // la s elimina espacios
+    const sinEsp = text.replace(/[!"#$%&'()*+,-./:;<=>?@[\]^_'{|}~\s]/g, "")
+
+    return sinEsp.length;  // la s elimina espacios
     
   },
   getAverageWordLength: (text) => {
-    const palabras = text.split(" ")
-    return text.replace(/\s/g, "").length/palabras.length
-    
-       
+    const palabras = text.trim().split(" ");
+    const promedio = text.replace(/\s/g, "").length/palabras.length;
+    const total = promedio.toFixed(2);
+    return parseFloat (total)
   },
+
   getNumberCount: (text) => {
-    const number = 0;
-    if (text.length === 0) {
-      return number;
+    const textSplit = text.split(' ')
+    let suma = 0
+    for(let i= 0; i < textSplit.length; i++ ){
+      
+      if(Number(textSplit[i])){
+        suma = suma + 1
+      }
     }
-    const num = text.replace(/[^0-9]+/g, "") //busca digitos del 0al9  /g busca en toda la cadena 
-    return num
-    
+    return suma 
   },
+
   getNumberSum: (text) => {
-    const number = 0;
-    if (text.length === 0) {
-      return number;
+    let suma = 0;
+    const numero = text.trim().split(" ");
+    for (let i=0; i<numero.length; i++){
+      const char = numero[i]
+      if (!isNaN(char) && char !== "")
+        suma = suma + (char*1);
     }
-    const num = text.replace(/[^0-9]+/g, "") //busca digitos del 0al9  /g busca en toda la cadena 
-    return num + num
+    return suma 
+
   },
 };
 

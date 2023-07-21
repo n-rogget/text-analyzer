@@ -1,10 +1,16 @@
 
-
+header{
+  background-color:#048DB3;
+  color:#E0F3FF;
+  font-family: "Courier New", monospace;
+  font-size: 25px;
+}
 footer{
   text-align: right;
   clear:both;
   margin-right: 70px;
   margin-top: 120px;
+  font-family: "sans-serif"
 }
 .caja { 
   margin-right: 50px;
@@ -16,23 +22,36 @@ footer{
   align-self: right;
   width:300px;
   height:40px;
+  line-height: 1.6;
+  max-height: none;
+  max-width: none;
   padding: 5px;
   float: right;
+  box-sizing: content-box;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.texto {
+
+textarea {
   margin-left: 50px;
   width:600px;
   height:300px;
   border: solid;
   align-self: left;
   font-size: 18px; 
-  float: left
+  float: left;
+  resize: none;
+  overflow: auto;
+
+ 
+}
+textarea[name="user-input"] {
+  resize: none;
+  overflow: auto;
 }
 
-Button {
+#reset-button {
   margin-top: 25px;
-  margin-left: 250px;
+  margin-left: 0px;
   font-family: "Courier New", monospace;
   font-size: 15px;
   text-align: center;
@@ -69,7 +88,7 @@ textarea{
   grid-template-rows: 200px 80px;
 }
 
-.grid-container > div {
+.grid-container {
   text-align: center;
 
 }

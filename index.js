@@ -27,16 +27,20 @@ cuadroTexto.addEventListener("keyup", () => {
   
   const suma = document.querySelector ("[ data-testid= 'number-sum']")
   const contadorSuma = analyzer.getNumberSum (texto);
-  suma.innerHTML = "Suma de numeros: " + contadorSuma
-  
-  
-  //document.getElementById("ide").innerHTML = "palabras: " + const;
+  suma.innerHTML = "Suma de números: " + contadorSuma
 
-  /*let reset = document.getElementById ("reset");
-reset.addEventListener("click", _ => {
-  location.reload();
 })
-*/
+const boton = document.getElementById('reset-button')
+const textarea = document.querySelector ('textarea[name="user-input"]')
+// const textarea = document.querySelector ('textarea')
 
-  //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
-});
+function reiniciar() {
+  textarea.value = "";  //me rechaza value
+  document.querySelector("[data-testid='word-count']").textContent = "Palabras: 0"
+  document.querySelector("[data-testid='character-count']").textContent = "Caracteres: 0"
+  document.querySelector ("[data-testid='character-no-spaces-count']").textContent = "Caracteres sin espacios: 0"
+  document.querySelector ("[data-testid='number-count']").textContent = "Números: 0"
+  document.querySelector ("[data-testid = 'word-length-average']").textContent = "Promedio longitud de palabras: 0"
+  document.querySelector ("[ data-testid= 'number-sum']").textContent = "Suma de numeros: 0"
+}
+boton.addEventListener('click', reiniciar)

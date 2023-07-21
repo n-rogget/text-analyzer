@@ -7,40 +7,41 @@
   </head>
 
   <body>
+    <header>
     <script src="index.js" type="module"></script>
     <h1>Analizador de texto</h1>
     <br />
     <div class="grid-container">
       <h2>
-        <div>
-          <textarea name="user-input" class="texto" >
- Escribe aquí el texto que quieres analizar... </textarea>
+        <div class = "grid-container">
+          <textarea  name="user-input" placeholder="Escribe aquí el texto que quieres analizar... "></textarea>
         </div>
         <div>
-          <button id="reset" type="reset" onclick="document.location.reload()" >
+          <button id="reset-button" type="reset">
             Limpiar texto
           </button>
         </div>
       </h2>
       <div class = "contenedor">
-        <ul>
+        <ul class ="contenedor">
           <div>
             <br />
             <br />
-            <li data-testid="word-count" class="caja">Palabras: </li>
-            <li data-testid="character-count" class="caja">Caracteres:</li>
-            <li data-testid="character-no-spaces-count" class="caja">Caracteres sin espacio ni puntuación:</li>
+            <li class = "caja" data-testid="word-count" >Palabras: </li>
+            <li class = "caja" data-testid="character-count" >Caracteres:</li>
+            <li class = "caja" data-testid="character-no-spaces-count" >Caracteres sin espacio:</li>
           </div>
           <div>
-            <li data-testid= "word-length-average" class="caja">Promedio longitud de palabras:</li>
-            <li data-testid= "number-count" class="caja">Números:</li>
-            <li data-testid= "number-sum" class="caja">Suma de números:</li>
+            <li class = "caja" data-testid= "word-length-average" >Promedio longitud de palabras:</li>
+            <li class = "caja" data-testid= "number-count" >Números:</li>
+            <li class = "caja" data-testid= "number-sum" >Suma de números:</li>
           </div>
         </ul>
       </div>
     </div>
+  </header>
     <footer>
-      <p>Nicole Rogget</p>
+      <p>Powered by Nicole Rogget</p>
     </footer>
   </body>
 </html>
